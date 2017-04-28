@@ -18,6 +18,19 @@ It comes included with following options:
  - Latest blog articles block
  - Author block
 
+#### Fields
+
+ - Entity reference: Bereich
+ - Entity reference: Bild
+ - Date: Datum / Zeit
+ - Text: Inhalt
+ - Entity reference: Schlagwörter
+ - Entity reference: Teaser: Bild
+ - List: Teaser: Farbe
+ - Text: Teaser: Titel
+ - Text: Teaser: Untertitel
+ - Text: Untertitel
+
 ### Dependencies
 
 ...
