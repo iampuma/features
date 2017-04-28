@@ -9,5 +9,4 @@ dependencies:
   - degov_section_page
   - degov_tax_blog
   - language
-  - panelizer
   - workbench_moderation
