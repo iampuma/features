@@ -3,7 +3,22 @@ description: 'Stellt das Element Blogartikel / Pressemitteilung für deGov zur V
 type: module
 core: 8.x
 dependencies:
+  - datetime
   - degov_media_image
   - degov_section_page
   - degov_tax_blog
+  - entity_browser
+  - field
+  - image
+  - language
+  - media_entity
+  - menu_ui
+  - node
+  - options
+  - panelizer
+  - path
+  - taxonomy
+  - text
+  - user
+  - views
   - workbench_moderation
