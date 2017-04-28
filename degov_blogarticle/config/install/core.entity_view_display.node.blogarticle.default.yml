@@ -24,6 +24,130 @@ third_party_settings:
     custom: false
     allow: false
     default: default
+    displays:
+      default:
+        blocks:
+          c69b885a-413d-4104-b56c-cfe41253944e:
+            id: 'entity_field:node:uid'
+            label: 'Authored by'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: author
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 0
+            uuid: c69b885a-413d-4104-b56c-cfe41253944e
+          a780993e-094f-47ab-83fd-d93b1ac662f1:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: timestamp
+              settings:
+                date_format: medium
+                custom_date_format: ''
+                timezone: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 0
+            uuid: a780993e-094f-47ab-83fd-d93b1ac662f1
+          31da2abc-810d-4212-a2ac-8dcb17c0fe53:
+            id: 'entity_field:node:field_blogarticle_datetime'
+            label: Datum/Zeit
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: datetime_default
+              settings:
+                format_type: medium
+                timezone_override: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 2
+            uuid: 31da2abc-810d-4212-a2ac-8dcb17c0fe53
+          3076e072-dbaf-4459-99d0-edac4d1ac9a6:
+            id: 'entity_field:node:field_blogarticle_image'
+            label: Bild
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                view_mode: blog_article
+                link: false
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 3
+            uuid: 3076e072-dbaf-4459-99d0-edac4d1ac9a6
+          5fa48e00-aa6d-419c-a237-28e4143f1fe1:
+            id: 'entity_field:node:field_blogarticle_subtitle'
+            label: Untertitel
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 1
+            uuid: 5fa48e00-aa6d-419c-a237-28e4143f1fe1
+          1e3132a6-e1dc-44b0-9508-3ea2c009f0b7:
+            id: 'entity_field:node:field_blogarticle_text'
+            label: Inhalt
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 4
+            uuid: 1e3132a6-e1dc-44b0-9508-3ea2c009f0b7
+        id: panels_variant
+        label: Default
+        uuid: d0fe46bc-4a31-46e4-80b7-3e3c162fc0a7
+        weight: 0
+        layout: layout_onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: ''
+        storage_id: ''
+        builder: ipe
+        pattern: panelizer
 id: node.blogarticle.default
 targetEntityType: node
 bundle: blogarticle
